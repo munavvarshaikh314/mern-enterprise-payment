@@ -1,0 +1,110 @@
+version: '3.8'
+
+services:
+  # API Gateway
+  api-gateway:
+    build: ./services/api-gateway
+    ports:
+      - "80:80"
+    depends_on:
+      - auth-service
+      - payment-service
+      - analytics-service
+    networks:
+      - mern-network
+
+  # Microservices
+  auth-service:
+    build: ./backend
+    command: npm run dev
+    environment:
+      - PORT=5001
+      - SERVICE_NAME=auth-service
+      - MONGODB_URI=mongodb://host.docker.internal:27017/auth_db
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+    networks:
+      - mern-network
+
+  payment-service:
+    build: ./backend
+    command: npm run dev
+    environment:
+      - PORT=5002
+      - SERVICE_NAME=payment-service
+      - POSTGRES_URL=postgres://postgres:postgres@host.docker.internal:5432/payment_db
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+    networks:
+      - mern-network
+
+  analytics-service:
+    build: ./backend
+    command: npm run dev
+    environment:
+      - PORT=5003
+      - SERVICE_NAME=analytics-service
+      - MONGODB_URI=mongodb://host.docker.internal:27017/analytics_db
+      - POSTGRES_URL=postgres://postgres:postgres@host.docker.internal:5432/payment_db
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+    networks:
+      - mern-network
+
+  # Redis (still needed)
+  redis:
+    image: redis:7-alpine
+    networks:
+      - mern-network
+
+  # Observability Stack
+  elasticsearch:
+    image: elasticsearch:8.10.2
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    networks:
+      - mern-network
+
+  logstash:
+    image: logstash:8.10.2
+    volumes:
+      - ./infrastructure/elk/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+    depends_on:
+      - elasticsearch
+    networks:
+      - mern-network
+
+  kibana:
+    image: kibana:8.10.2
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - mern-network
+
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./infrastructure/prometheus-grafana/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - mern-network
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3001:3000"
+    depends_on:
+      - prometheus
+    networks:
+      - mern-network
+
+networks:
+  mern-network:
+    driver: bridge

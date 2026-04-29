@@ -1,0 +1,388 @@
+# HELP mern_process_cpu_user_seconds_total Total user CPU time spent in seconds.
+# TYPE mern_process_cpu_user_seconds_total counter
+mern_process_cpu_user_seconds_total 21.718999999999994
+
+# HELP mern_process_cpu_system_seconds_total Total system CPU time spent in seconds.
+# TYPE mern_process_cpu_system_seconds_total counter
+mern_process_cpu_system_seconds_total 5.782000000000001
+
+# HELP mern_process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE mern_process_cpu_seconds_total counter
+mern_process_cpu_seconds_total 27.500999999999998
+
+# HELP mern_process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE mern_process_start_time_seconds gauge
+mern_process_start_time_seconds 1777469079
+
+# HELP mern_process_resident_memory_bytes Resident memory size in bytes.
+# TYPE mern_process_resident_memory_bytes gauge
+mern_process_resident_memory_bytes 24629248
+
+# HELP mern_nodejs_eventloop_lag_seconds Lag of event loop in seconds.
+# TYPE mern_nodejs_eventloop_lag_seconds gauge
+mern_nodejs_eventloop_lag_seconds 0.0488871
+
+# HELP mern_nodejs_eventloop_lag_min_seconds The minimum recorded event loop delay.
+# TYPE mern_nodejs_eventloop_lag_min_seconds gauge
+mern_nodejs_eventloop_lag_min_seconds 0.009101312
+
+# HELP mern_nodejs_eventloop_lag_max_seconds The maximum recorded event loop delay.
+# TYPE mern_nodejs_eventloop_lag_max_seconds gauge
+mern_nodejs_eventloop_lag_max_seconds 0.134742015
+
+# HELP mern_nodejs_eventloop_lag_mean_seconds The mean of the recorded event loop delays.
+# TYPE mern_nodejs_eventloop_lag_mean_seconds gauge
+mern_nodejs_eventloop_lag_mean_seconds 0.01561898797851454
+
+# HELP mern_nodejs_eventloop_lag_stddev_seconds The standard deviation of the recorded event loop delays.
+# TYPE mern_nodejs_eventloop_lag_stddev_seconds gauge
+mern_nodejs_eventloop_lag_stddev_seconds 0.0034060839600840755
+
+# HELP mern_nodejs_eventloop_lag_p50_seconds The 50th percentile of the recorded event loop delays.
+# TYPE mern_nodejs_eventloop_lag_p50_seconds gauge
+mern_nodejs_eventloop_lag_p50_seconds 0.015335423
+
+# HELP mern_nodejs_eventloop_lag_p90_seconds The 90th percentile of the recorded event loop delays.
+# TYPE mern_nodejs_eventloop_lag_p90_seconds gauge
+mern_nodejs_eventloop_lag_p90_seconds 0.020742143
+
+# HELP mern_nodejs_eventloop_lag_p99_seconds The 99th percentile of the recorded event loop delays.
+# TYPE mern_nodejs_eventloop_lag_p99_seconds gauge
+mern_nodejs_eventloop_lag_p99_seconds 0.024559615
+
+# HELP mern_nodejs_active_resources Number of active resources that are currently keeping the event loop alive, grouped by async resource type.
+# TYPE mern_nodejs_active_resources gauge
+mern_nodejs_active_resources{type="TTYWrap"} 2
+mern_nodejs_active_resources{type="TCPSocketWrap"} 8
+mern_nodejs_active_resources{type="TCPServerWrap"} 1
+mern_nodejs_active_resources{type="Timeout"} 2
+mern_nodejs_active_resources{type="Immediate"} 1
+
+# HELP mern_nodejs_active_resources_total Total number of active resources.
+# TYPE mern_nodejs_active_resources_total gauge
+mern_nodejs_active_resources_total 14
+
+# HELP mern_nodejs_active_handles Number of active libuv handles grouped by handle type. Every handle type is C++ class name.
+# TYPE mern_nodejs_active_handles gauge
+mern_nodejs_active_handles{type="WriteStream"} 2
+mern_nodejs_active_handles{type="Socket"} 8
+mern_nodejs_active_handles{type="Server"} 1
+
+# HELP mern_nodejs_active_handles_total Total number of active handles.
+# TYPE mern_nodejs_active_handles_total gauge
+mern_nodejs_active_handles_total 11
+
+# HELP mern_nodejs_active_requests Number of active libuv requests grouped by request type. Every request type is C++ class name.
+# TYPE mern_nodejs_active_requests gauge
+
+# HELP mern_nodejs_active_requests_total Total number of active requests.
+# TYPE mern_nodejs_active_requests_total gauge
+mern_nodejs_active_requests_total 0
+
+# HELP mern_nodejs_heap_size_total_bytes Process heap size from Node.js in bytes.
+# TYPE mern_nodejs_heap_size_total_bytes gauge
+mern_nodejs_heap_size_total_bytes 408068096
+
+# HELP mern_nodejs_heap_size_used_bytes Process heap size used from Node.js in bytes.
+# TYPE mern_nodejs_heap_size_used_bytes gauge
+mern_nodejs_heap_size_used_bytes 398704496
+
+# HELP mern_nodejs_external_memory_bytes Node.js external memory size in bytes.
+# TYPE mern_nodejs_external_memory_bytes gauge
+mern_nodejs_external_memory_bytes 28280352
+
+# HELP mern_nodejs_heap_space_size_total_bytes Process heap space size total from Node.js in bytes.
+# TYPE mern_nodejs_heap_space_size_total_bytes gauge
+mern_nodejs_heap_space_size_total_bytes{space="read_only"} 0
+mern_nodejs_heap_space_size_total_bytes{space="new"} 1048576
+mern_nodejs_heap_space_size_total_bytes{space="old"} 375619584
+mern_nodejs_heap_space_size_total_bytes{space="code"} 9699328
+mern_nodejs_heap_space_size_total_bytes{space="shared"} 0
+mern_nodejs_heap_space_size_total_bytes{space="new_large_object"} 0
+mern_nodejs_heap_space_size_total_bytes{space="large_object"} 21544960
+mern_nodejs_heap_space_size_total_bytes{space="code_large_object"} 155648
+mern_nodejs_heap_space_size_total_bytes{space="shared_large_object"} 0
+
+# HELP mern_nodejs_heap_space_size_used_bytes Process heap space size used from Node.js in bytes.
+# TYPE mern_nodejs_heap_space_size_used_bytes gauge
+mern_nodejs_heap_space_size_used_bytes{space="read_only"} 0
+mern_nodejs_heap_space_size_used_bytes{space="new"} 640672
+mern_nodejs_heap_space_size_used_bytes{space="old"} 367638336
+mern_nodejs_heap_space_size_used_bytes{space="code"} 9016272
+mern_nodejs_heap_space_size_used_bytes{space="shared"} 0
+mern_nodejs_heap_space_size_used_bytes{space="new_large_object"} 0
+mern_nodejs_heap_space_size_used_bytes{space="large_object"} 21274712
+mern_nodejs_heap_space_size_used_bytes{space="code_large_object"} 138304
+mern_nodejs_heap_space_size_used_bytes{space="shared_large_object"} 0
+
+# HELP mern_nodejs_heap_space_size_available_bytes Process heap space size available from Node.js in bytes.
+# TYPE mern_nodejs_heap_space_size_available_bytes gauge
+mern_nodejs_heap_space_size_available_bytes{space="read_only"} 0
+mern_nodejs_heap_space_size_available_bytes{space="new"} 390208
+mern_nodejs_heap_space_size_available_bytes{space="old"} 1229760
+mern_nodejs_heap_space_size_available_bytes{space="code"} 74960
+mern_nodejs_heap_space_size_available_bytes{space="shared"} 0
+mern_nodejs_heap_space_size_available_bytes{space="new_large_object"} 1048576
+mern_nodejs_heap_space_size_available_bytes{space="large_object"} 0
+mern_nodejs_heap_space_size_available_bytes{space="code_large_object"} 0
+mern_nodejs_heap_space_size_available_bytes{space="shared_large_object"} 0
+
+# HELP mern_nodejs_version_info Node.js version info.
+# TYPE mern_nodejs_version_info gauge
+mern_nodejs_version_info{version="v20.20.1",major="20",minor="20",patch="1"} 1
+
+# HELP mern_nodejs_gc_duration_seconds Garbage collection duration by kind, one of major, minor, incremental or weakcb.
+# TYPE mern_nodejs_gc_duration_seconds histogram
+mern_nodejs_gc_duration_seconds_bucket{le="0.001",kind="minor"} 1
+mern_nodejs_gc_duration_seconds_bucket{le="0.01",kind="minor"} 94
+mern_nodejs_gc_duration_seconds_bucket{le="0.1",kind="minor"} 111
+mern_nodejs_gc_duration_seconds_bucket{le="1",kind="minor"} 111
+mern_nodejs_gc_duration_seconds_bucket{le="2",kind="minor"} 111
+mern_nodejs_gc_duration_seconds_bucket{le="5",kind="minor"} 111
+mern_nodejs_gc_duration_seconds_bucket{le="+Inf",kind="minor"} 111
+mern_nodejs_gc_duration_seconds_sum{kind="minor"} 0.6456105000972747
+mern_nodejs_gc_duration_seconds_count{kind="minor"} 111
+mern_nodejs_gc_duration_seconds_bucket{le="0.001",kind="incremental"} 2
+mern_nodejs_gc_duration_seconds_bucket{le="0.01",kind="incremental"} 3
+mern_nodejs_gc_duration_seconds_bucket{le="0.1",kind="incremental"} 3
+mern_nodejs_gc_duration_seconds_bucket{le="1",kind="incremental"} 3
+mern_nodejs_gc_duration_seconds_bucket{le="2",kind="incremental"} 3
+mern_nodejs_gc_duration_seconds_bucket{le="5",kind="incremental"} 3
+mern_nodejs_gc_duration_seconds_bucket{le="+Inf",kind="incremental"} 3
+mern_nodejs_gc_duration_seconds_sum{kind="incremental"} 0.0037191998958587646
+mern_nodejs_gc_duration_seconds_count{kind="incremental"} 3
+mern_nodejs_gc_duration_seconds_bucket{le="0.001",kind="major"} 0
+mern_nodejs_gc_duration_seconds_bucket{le="0.01",kind="major"} 1
+mern_nodejs_gc_duration_seconds_bucket{le="0.1",kind="major"} 3
+mern_nodejs_gc_duration_seconds_bucket{le="1",kind="major"} 3
+mern_nodejs_gc_duration_seconds_bucket{le="2",kind="major"} 3
+mern_nodejs_gc_duration_seconds_bucket{le="5",kind="major"} 3
+mern_nodejs_gc_duration_seconds_bucket{le="+Inf",kind="major"} 3
+mern_nodejs_gc_duration_seconds_sum{kind="major"} 0.05021930003166199
+mern_nodejs_gc_duration_seconds_count{kind="major"} 3
+
+# HELP http_requests_total Total number of HTTP requests
+# TYPE http_requests_total counter
+http_requests_total{method="GET",route="/metrics",status="200"} 6
+http_requests_total{method="GET",route="/favicon.ico",status="404"} 1
+http_requests_total{method="GET",route="/health",status="200"} 1
+http_requests_total{method="GET",route="/profile",status="401"} 4
+http_requests_total{method="POST",route="/refresh-token",status="200"} 2
+http_requests_total{method="GET",route="/profile",status="304"} 2
+http_requests_total{method="GET",route="/dashboard",status="304"} 2
+http_requests_total{method="GET",route="/my-payments",status="304"} 2
+http_requests_total{method="GET",route="/dashboard",status="200"} 5
+http_requests_total{method="GET",route="/users/analytics",status="200"} 2
+http_requests_total{method="GET",route="/",status="304"} 1
+http_requests_total{method="GET",route="/payments",status="200"} 2
+http_requests_total{method="GET",route="/payments/analytics",status="200"} 2
+http_requests_total{method="POST",route="/logout",status="200"} 2
+http_requests_total{method="POST",route="/register",status="201"} 1
+http_requests_total{method="POST",route="/verify-email",status="200"} 1
+http_requests_total{method="POST",route="/create",status="400"} 1
+http_requests_total{method="POST",route="/create",status="201"} 1
+http_requests_total{method="POST",route="/login",status="200"} 1
+http_requests_total{method="GET",route="/",status="200"} 1
+
+# HELP http_request_duration_ms HTTP request duration in ms
+# TYPE http_request_duration_ms histogram
+http_request_duration_ms_bucket{le="50",method="GET",route="/metrics",status="200"} 4
+http_request_duration_ms_bucket{le="100",method="GET",route="/metrics",status="200"} 6
+http_request_duration_ms_bucket{le="200",method="GET",route="/metrics",status="200"} 6
+http_request_duration_ms_bucket{le="300",method="GET",route="/metrics",status="200"} 6
+http_request_duration_ms_bucket{le="500",method="GET",route="/metrics",status="200"} 6
+http_request_duration_ms_bucket{le="1000",method="GET",route="/metrics",status="200"} 6
+http_request_duration_ms_bucket{le="2000",method="GET",route="/metrics",status="200"} 6
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/metrics",status="200"} 6
+http_request_duration_ms_sum{method="GET",route="/metrics",status="200"} 206
+http_request_duration_ms_count{method="GET",route="/metrics",status="200"} 6
+http_request_duration_ms_bucket{le="50",method="GET",route="/favicon.ico",status="404"} 1
+http_request_duration_ms_bucket{le="100",method="GET",route="/favicon.ico",status="404"} 1
+http_request_duration_ms_bucket{le="200",method="GET",route="/favicon.ico",status="404"} 1
+http_request_duration_ms_bucket{le="300",method="GET",route="/favicon.ico",status="404"} 1
+http_request_duration_ms_bucket{le="500",method="GET",route="/favicon.ico",status="404"} 1
+http_request_duration_ms_bucket{le="1000",method="GET",route="/favicon.ico",status="404"} 1
+http_request_duration_ms_bucket{le="2000",method="GET",route="/favicon.ico",status="404"} 1
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/favicon.ico",status="404"} 1
+http_request_duration_ms_sum{method="GET",route="/favicon.ico",status="404"} 1
+http_request_duration_ms_count{method="GET",route="/favicon.ico",status="404"} 1
+http_request_duration_ms_bucket{le="50",method="GET",route="/health",status="200"} 0
+http_request_duration_ms_bucket{le="100",method="GET",route="/health",status="200"} 1
+http_request_duration_ms_bucket{le="200",method="GET",route="/health",status="200"} 1
+http_request_duration_ms_bucket{le="300",method="GET",route="/health",status="200"} 1
+http_request_duration_ms_bucket{le="500",method="GET",route="/health",status="200"} 1
+http_request_duration_ms_bucket{le="1000",method="GET",route="/health",status="200"} 1
+http_request_duration_ms_bucket{le="2000",method="GET",route="/health",status="200"} 1
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/health",status="200"} 1
+http_request_duration_ms_sum{method="GET",route="/health",status="200"} 64
+http_request_duration_ms_count{method="GET",route="/health",status="200"} 1
+http_request_duration_ms_bucket{le="50",method="GET",route="/profile",status="401"} 2
+http_request_duration_ms_bucket{le="100",method="GET",route="/profile",status="401"} 4
+http_request_duration_ms_bucket{le="200",method="GET",route="/profile",status="401"} 4
+http_request_duration_ms_bucket{le="300",method="GET",route="/profile",status="401"} 4
+http_request_duration_ms_bucket{le="500",method="GET",route="/profile",status="401"} 4
+http_request_duration_ms_bucket{le="1000",method="GET",route="/profile",status="401"} 4
+http_request_duration_ms_bucket{le="2000",method="GET",route="/profile",status="401"} 4
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/profile",status="401"} 4
+http_request_duration_ms_sum{method="GET",route="/profile",status="401"} 150
+http_request_duration_ms_count{method="GET",route="/profile",status="401"} 4
+http_request_duration_ms_bucket{le="50",method="POST",route="/refresh-token",status="200"} 0
+http_request_duration_ms_bucket{le="100",method="POST",route="/refresh-token",status="200"} 1
+http_request_duration_ms_bucket{le="200",method="POST",route="/refresh-token",status="200"} 2
+http_request_duration_ms_bucket{le="300",method="POST",route="/refresh-token",status="200"} 2
+http_request_duration_ms_bucket{le="500",method="POST",route="/refresh-token",status="200"} 2
+http_request_duration_ms_bucket{le="1000",method="POST",route="/refresh-token",status="200"} 2
+http_request_duration_ms_bucket{le="2000",method="POST",route="/refresh-token",status="200"} 2
+http_request_duration_ms_bucket{le="+Inf",method="POST",route="/refresh-token",status="200"} 2
+http_request_duration_ms_sum{method="POST",route="/refresh-token",status="200"} 232
+http_request_duration_ms_count{method="POST",route="/refresh-token",status="200"} 2
+http_request_duration_ms_bucket{le="50",method="GET",route="/profile",status="304"} 2
+http_request_duration_ms_bucket{le="100",method="GET",route="/profile",status="304"} 2
+http_request_duration_ms_bucket{le="200",method="GET",route="/profile",status="304"} 2
+http_request_duration_ms_bucket{le="300",method="GET",route="/profile",status="304"} 2
+http_request_duration_ms_bucket{le="500",method="GET",route="/profile",status="304"} 2
+http_request_duration_ms_bucket{le="1000",method="GET",route="/profile",status="304"} 2
+http_request_duration_ms_bucket{le="2000",method="GET",route="/profile",status="304"} 2
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/profile",status="304"} 2
+http_request_duration_ms_sum{method="GET",route="/profile",status="304"} 28
+http_request_duration_ms_count{method="GET",route="/profile",status="304"} 2
+http_request_duration_ms_bucket{le="50",method="GET",route="/dashboard",status="304"} 1
+http_request_duration_ms_bucket{le="100",method="GET",route="/dashboard",status="304"} 1
+http_request_duration_ms_bucket{le="200",method="GET",route="/dashboard",status="304"} 1
+http_request_duration_ms_bucket{le="300",method="GET",route="/dashboard",status="304"} 2
+http_request_duration_ms_bucket{le="500",method="GET",route="/dashboard",status="304"} 2
+http_request_duration_ms_bucket{le="1000",method="GET",route="/dashboard",status="304"} 2
+http_request_duration_ms_bucket{le="2000",method="GET",route="/dashboard",status="304"} 2
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/dashboard",status="304"} 2
+http_request_duration_ms_sum{method="GET",route="/dashboard",status="304"} 238
+http_request_duration_ms_count{method="GET",route="/dashboard",status="304"} 2
+http_request_duration_ms_bucket{le="50",method="GET",route="/my-payments",status="304"} 1
+http_request_duration_ms_bucket{le="100",method="GET",route="/my-payments",status="304"} 1
+http_request_duration_ms_bucket{le="200",method="GET",route="/my-payments",status="304"} 1
+http_request_duration_ms_bucket{le="300",method="GET",route="/my-payments",status="304"} 2
+http_request_duration_ms_bucket{le="500",method="GET",route="/my-payments",status="304"} 2
+http_request_duration_ms_bucket{le="1000",method="GET",route="/my-payments",status="304"} 2
+http_request_duration_ms_bucket{le="2000",method="GET",route="/my-payments",status="304"} 2
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/my-payments",status="304"} 2
+http_request_duration_ms_sum{method="GET",route="/my-payments",status="304"} 313
+http_request_duration_ms_count{method="GET",route="/my-payments",status="304"} 2
+http_request_duration_ms_bucket{le="50",method="GET",route="/dashboard",status="200"} 3
+http_request_duration_ms_bucket{le="100",method="GET",route="/dashboard",status="200"} 4
+http_request_duration_ms_bucket{le="200",method="GET",route="/dashboard",status="200"} 4
+http_request_duration_ms_bucket{le="300",method="GET",route="/dashboard",status="200"} 4
+http_request_duration_ms_bucket{le="500",method="GET",route="/dashboard",status="200"} 5
+http_request_duration_ms_bucket{le="1000",method="GET",route="/dashboard",status="200"} 5
+http_request_duration_ms_bucket{le="2000",method="GET",route="/dashboard",status="200"} 5
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/dashboard",status="200"} 5
+http_request_duration_ms_sum{method="GET",route="/dashboard",status="200"} 592
+http_request_duration_ms_count{method="GET",route="/dashboard",status="200"} 5
+http_request_duration_ms_bucket{le="50",method="GET",route="/users/analytics",status="200"} 1
+http_request_duration_ms_bucket{le="100",method="GET",route="/users/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="200",method="GET",route="/users/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="300",method="GET",route="/users/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="500",method="GET",route="/users/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="1000",method="GET",route="/users/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="2000",method="GET",route="/users/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/users/analytics",status="200"} 2
+http_request_duration_ms_sum{method="GET",route="/users/analytics",status="200"} 131
+http_request_duration_ms_count{method="GET",route="/users/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="50",method="GET",route="/",status="304"} 1
+http_request_duration_ms_bucket{le="100",method="GET",route="/",status="304"} 1
+http_request_duration_ms_bucket{le="200",method="GET",route="/",status="304"} 1
+http_request_duration_ms_bucket{le="300",method="GET",route="/",status="304"} 1
+http_request_duration_ms_bucket{le="500",method="GET",route="/",status="304"} 1
+http_request_duration_ms_bucket{le="1000",method="GET",route="/",status="304"} 1
+http_request_duration_ms_bucket{le="2000",method="GET",route="/",status="304"} 1
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/",status="304"} 1
+http_request_duration_ms_sum{method="GET",route="/",status="304"} 49
+http_request_duration_ms_count{method="GET",route="/",status="304"} 1
+http_request_duration_ms_bucket{le="50",method="GET",route="/payments",status="200"} 0
+http_request_duration_ms_bucket{le="100",method="GET",route="/payments",status="200"} 2
+http_request_duration_ms_bucket{le="200",method="GET",route="/payments",status="200"} 2
+http_request_duration_ms_bucket{le="300",method="GET",route="/payments",status="200"} 2
+http_request_duration_ms_bucket{le="500",method="GET",route="/payments",status="200"} 2
+http_request_duration_ms_bucket{le="1000",method="GET",route="/payments",status="200"} 2
+http_request_duration_ms_bucket{le="2000",method="GET",route="/payments",status="200"} 2
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/payments",status="200"} 2
+http_request_duration_ms_sum{method="GET",route="/payments",status="200"} 106
+http_request_duration_ms_count{method="GET",route="/payments",status="200"} 2
+http_request_duration_ms_bucket{le="50",method="GET",route="/payments/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="100",method="GET",route="/payments/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="200",method="GET",route="/payments/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="300",method="GET",route="/payments/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="500",method="GET",route="/payments/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="1000",method="GET",route="/payments/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="2000",method="GET",route="/payments/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/payments/analytics",status="200"} 2
+http_request_duration_ms_sum{method="GET",route="/payments/analytics",status="200"} 70
+http_request_duration_ms_count{method="GET",route="/payments/analytics",status="200"} 2
+http_request_duration_ms_bucket{le="50",method="POST",route="/logout",status="200"} 2
+http_request_duration_ms_bucket{le="100",method="POST",route="/logout",status="200"} 2
+http_request_duration_ms_bucket{le="200",method="POST",route="/logout",status="200"} 2
+http_request_duration_ms_bucket{le="300",method="POST",route="/logout",status="200"} 2
+http_request_duration_ms_bucket{le="500",method="POST",route="/logout",status="200"} 2
+http_request_duration_ms_bucket{le="1000",method="POST",route="/logout",status="200"} 2
+http_request_duration_ms_bucket{le="2000",method="POST",route="/logout",status="200"} 2
+http_request_duration_ms_bucket{le="+Inf",method="POST",route="/logout",status="200"} 2
+http_request_duration_ms_sum{method="POST",route="/logout",status="200"} 23
+http_request_duration_ms_count{method="POST",route="/logout",status="200"} 2
+http_request_duration_ms_bucket{le="50",method="POST",route="/register",status="201"} 0
+http_request_duration_ms_bucket{le="100",method="POST",route="/register",status="201"} 0
+http_request_duration_ms_bucket{le="200",method="POST",route="/register",status="201"} 0
+http_request_duration_ms_bucket{le="300",method="POST",route="/register",status="201"} 0
+http_request_duration_ms_bucket{le="500",method="POST",route="/register",status="201"} 0
+http_request_duration_ms_bucket{le="1000",method="POST",route="/register",status="201"} 0
+http_request_duration_ms_bucket{le="2000",method="POST",route="/register",status="201"} 0
+http_request_duration_ms_bucket{le="+Inf",method="POST",route="/register",status="201"} 1
+http_request_duration_ms_sum{method="POST",route="/register",status="201"} 4367
+http_request_duration_ms_count{method="POST",route="/register",status="201"} 1
+http_request_duration_ms_bucket{le="50",method="POST",route="/verify-email",status="200"} 0
+http_request_duration_ms_bucket{le="100",method="POST",route="/verify-email",status="200"} 0
+http_request_duration_ms_bucket{le="200",method="POST",route="/verify-email",status="200"} 0
+http_request_duration_ms_bucket{le="300",method="POST",route="/verify-email",status="200"} 0
+http_request_duration_ms_bucket{le="500",method="POST",route="/verify-email",status="200"} 0
+http_request_duration_ms_bucket{le="1000",method="POST",route="/verify-email",status="200"} 0
+http_request_duration_ms_bucket{le="2000",method="POST",route="/verify-email",status="200"} 0
+http_request_duration_ms_bucket{le="+Inf",method="POST",route="/verify-email",status="200"} 1
+http_request_duration_ms_sum{method="POST",route="/verify-email",status="200"} 5332
+http_request_duration_ms_count{method="POST",route="/verify-email",status="200"} 1
+http_request_duration_ms_bucket{le="50",method="POST",route="/create",status="400"} 1
+http_request_duration_ms_bucket{le="100",method="POST",route="/create",status="400"} 1
+http_request_duration_ms_bucket{le="200",method="POST",route="/create",status="400"} 1
+http_request_duration_ms_bucket{le="300",method="POST",route="/create",status="400"} 1
+http_request_duration_ms_bucket{le="500",method="POST",route="/create",status="400"} 1
+http_request_duration_ms_bucket{le="1000",method="POST",route="/create",status="400"} 1
+http_request_duration_ms_bucket{le="2000",method="POST",route="/create",status="400"} 1
+http_request_duration_ms_bucket{le="+Inf",method="POST",route="/create",status="400"} 1
+http_request_duration_ms_sum{method="POST",route="/create",status="400"} 38
+http_request_duration_ms_count{method="POST",route="/create",status="400"} 1
+http_request_duration_ms_bucket{le="50",method="POST",route="/create",status="201"} 0
+http_request_duration_ms_bucket{le="100",method="POST",route="/create",status="201"} 0
+http_request_duration_ms_bucket{le="200",method="POST",route="/create",status="201"} 0
+http_request_duration_ms_bucket{le="300",method="POST",route="/create",status="201"} 0
+http_request_duration_ms_bucket{le="500",method="POST",route="/create",status="201"} 0
+http_request_duration_ms_bucket{le="1000",method="POST",route="/create",status="201"} 1
+http_request_duration_ms_bucket{le="2000",method="POST",route="/create",status="201"} 1
+http_request_duration_ms_bucket{le="+Inf",method="POST",route="/create",status="201"} 1
+http_request_duration_ms_sum{method="POST",route="/create",status="201"} 766
+http_request_duration_ms_count{method="POST",route="/create",status="201"} 1
+http_request_duration_ms_bucket{le="50",method="POST",route="/login",status="200"} 0
+http_request_duration_ms_bucket{le="100",method="POST",route="/login",status="200"} 0
+http_request_duration_ms_bucket{le="200",method="POST",route="/login",status="200"} 0
+http_request_duration_ms_bucket{le="300",method="POST",route="/login",status="200"} 0
+http_request_duration_ms_bucket{le="500",method="POST",route="/login",status="200"} 1
+http_request_duration_ms_bucket{le="1000",method="POST",route="/login",status="200"} 1
+http_request_duration_ms_bucket{le="2000",method="POST",route="/login",status="200"} 1
+http_request_duration_ms_bucket{le="+Inf",method="POST",route="/login",status="200"} 1
+http_request_duration_ms_sum{method="POST",route="/login",status="200"} 312
+http_request_duration_ms_count{method="POST",route="/login",status="200"} 1
+http_request_duration_ms_bucket{le="50",method="GET",route="/",status="200"} 0
+http_request_duration_ms_bucket{le="100",method="GET",route="/",status="200"} 0
+http_request_duration_ms_bucket{le="200",method="GET",route="/",status="200"} 1
+http_request_duration_ms_bucket{le="300",method="GET",route="/",status="200"} 1
+http_request_duration_ms_bucket{le="500",method="GET",route="/",status="200"} 1
+http_request_duration_ms_bucket{le="1000",method="GET",route="/",status="200"} 1
+http_request_duration_ms_bucket{le="2000",method="GET",route="/",status="200"} 1
+http_request_duration_ms_bucket{le="+Inf",method="GET",route="/",status="200"} 1
+http_request_duration_ms_sum{method="GET",route="/",status="200"} 199
+http_request_duration_ms_count{method="GET",route="/",status="200"} 1

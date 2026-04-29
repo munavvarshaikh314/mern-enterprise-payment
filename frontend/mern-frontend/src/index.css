@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 100% 99%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 24 95% 53%;
+    --primary-foreground: 40 100% 98%;
+    --secondary: 35 100% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 35 60% 96%;
+    --muted-foreground: 215 16% 40%;
+    --accent: 168 48% 92%;
+    --accent-foreground: 173 80% 22%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 32 46% 88%;
+    --input: 32 46% 88%;
+    --ring: 24 95% 53%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 36 100% 98%;
+    --card: 223 39% 14%;
+    --card-foreground: 36 100% 98%;
+    --popover: 223 39% 14%;
+    --popover-foreground: 36 100% 98%;
+    --primary: 24 95% 53%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 18%;
+    --secondary-foreground: 36 100% 98%;
+    --muted: 217 33% 18%;
+    --muted-foreground: 33 34% 75%;
+    --accent: 173 51% 18%;
+    --accent-foreground: 165 80% 92%;
+    --destructive: 0 63% 45%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 22%;
+    --input: 217 33% 22%;
+    --ring: 24 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Segoe UI", "Aptos", "Trebuchet MS", sans-serif;
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.18);
+    color: hsl(var(--foreground));
+  }
+}

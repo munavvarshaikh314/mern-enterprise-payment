@@ -1,0 +1,21 @@
+// {
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["src/*"]
+//     }
+//   }
+// }
+{
+  "compilerOptions": {
+    //"jsx": "react",
+    //"jsx": "react",
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": []  // ✅ This prevents pulling in unused @types like 'd3-color'
+  },
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "mern-frontend-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix ./mern-frontend run dev",
+    "build": "npm --prefix ./mern-frontend run build",
+    "lint": "npm --prefix ./mern-frontend run lint",
+    "preview": "npm --prefix ./mern-frontend run preview"
+  }
+}

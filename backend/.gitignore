@@ -1,4 +1,3 @@
-
 # Dependencies
 node_modules/
 
@@ -7,13 +6,6 @@ dist/
 build/
 
 # Environment variables
-
-# Root global ignore
-node_modules/
-dist/
-build/
-
->>>>>>> db8dd4a (Initial commit)
 .env
 .env.*
 !.env.example
@@ -66,25 +58,3 @@ postgres-data/
 
 # ESLint cache
 .eslintcache
-=======
-*.log
-logs/
-
-.DS_Store
-Thumbs.db
-
-.vscode/
-.idea/
-
-coverage/
-
-# PDFs, invoices, generated outputs
-**/*.pdf
-uploads/
-tmp/
-temp/
-
-# Docker volumes
-mongodb_data/
-postgres_data/
-
